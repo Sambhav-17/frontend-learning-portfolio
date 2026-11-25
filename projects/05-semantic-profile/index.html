@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A semantic HTML profile page for front-end learner Alex Morgan.">
+    <title>Alex Morgan · Profile</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="wordmark" href="#home" aria-label="Alex Morgan, home">AM<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <article class="profile" id="home">
+        <p class="eyebrow">A little introduction</p>
+        <h1>Curious by nature.<br><span>Building for the web.</span></h1>
+        <p class="lead">I'm Alex, a front-end learner who likes turning small ideas into thoughtful, useful experiences.</p>
+        <div class="profile-meta">
+          <span class="avatar" aria-hidden="true">A</span>
+          <p><strong>Alex Morgan</strong><br><span>Learning in public · Portland, OR</span></p>
+        </div>
+      </article>
+
+      <section class="content-section" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">A bit about me</h2>
+        <p>I started learning HTML and CSS because I wanted to understand how the pages I use every day are made. Now I enjoy the details: clear structure, readable type, and layouts that work on any screen.</p>
+        <p>Outside the browser, you'll usually find me with a book, a sketchbook, or a very ambitious weekend recipe.</p>
+      </section>
+
+      <section class="content-section" id="interests" aria-labelledby="interests-title">
+        <h2 id="interests-title">Things I'm exploring</h2>
+        <ul class="interest-list">
+          <li>Accessible interface patterns</li>
+          <li>CSS layout and design systems</li>
+          <li>Small creative coding projects</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <p>Thanks for stopping by.</p>
+      <a href="mailto:hello@example.com">Say hello <span aria-hidden="true">↗</span></a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root { --ink: #29332b; --muted: #737c70; --paper: #faf8f1; --green: #51745b; --line: #e4e3d8; font-family: 'DM Sans', sans-serif; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { margin: 0; color: var(--ink); background: var(--paper); }
+a { color: inherit; text-decoration: none; }
+.site-header { display: flex; align-items: center; justify-content: space-between; padding: 1rem max(1.5rem, calc((100% - 1120px) / 2)); border-bottom: 1px solid var(--line); }
+.logo { font: 600 1.25rem 'Instrument Serif', serif; letter-spacing: -.04em; }
+.logo span { color: var(--green); font-style: italic; }
+.nav-links { display: flex; align-items: center; gap: 1.6rem; color: var(--muted); font-size: .72rem; }
+.nav-cta { padding: .65rem .9rem; border: 1px solid #cbd4c8; border-radius: 99px; color: var(--ink); }
+main { max-width: 1120px; margin: auto; padding: 0 1.5rem; }
+.hero { padding: 4rem 0 3rem; }
+.eyebrow, .card-category, .about > span, footer { font: 500 .6rem 'DM Mono', monospace; letter-spacing: .06em; text-transform: uppercase; }
+.eyebrow { color: var(--green); }
+h1, h2, h3 { font-family: 'Instrument Serif', serif; font-weight: 400; }
+h1 { margin: 1rem 0; font-size: clamp(4rem, 10vw, 7rem); letter-spacing: -.06em; line-height: .84; }
+h1 em { color: var(--green); }
+.hero > p:last-child { max-width: 390px; color: var(--muted); line-height: 1.75; }
+.places { padding: 2rem 0 4rem; border-top: 1px solid var(--line); }
+.section-head { display: flex; justify-content: space-between; align-items: end; margin-bottom: 1.4rem; }
+.section-head h2 { margin: .4rem 0 0; font-size: 2.5rem; letter-spacing: -.05em; }
+.section-head > a { color: var(--green); font-size: .72rem; font-weight: 700; }
+.card-grid { display: flex; flex-wrap: wrap; align-items: stretch; gap: 1rem; }
+.place-card { display: flex; flex: 1 1 calc(25% - .75rem); min-width: 215px; flex-direction: column; }
+.card-image { position: relative; display: grid; min-height: 205px; place-items: center; overflow: hidden; }
+.image--coffee { background: #e6d4bb; }
+.image--flowers { background: #e4e9dc; }
+.image--ceramics { background: #eadfd1; }
+.image--books { background: #e0e5e9; }
+.image-stamp { position: absolute; z-index: 1; top: .7rem; right: .7rem; display: grid; width: 54px; aspect-ratio: 1; place-items: center; transform: rotate(8deg); border-radius: 50%; color: white; background: var(--green); text-align: center; font: .45rem/1.2 'DM Mono', monospace; }
+.image-shape { width: 105px; height: 120px; border-radius: 10px 10px 45% 45%; background: #b57954; box-shadow: inset 12px 0 #9c684b; }
+.flower-shape { color: #ca765b; font-size: 8rem; }
+.vase-shape { width: 90px; height: 130px; border-radius: 40% 40% 25% 25%; background: #b87d5c; }
+.book-shape { display: grid; width: 115px; height: 150px; place-items: center; transform: rotate(-7deg); background: #9bab9b; color: #f9f3e7; text-align: center; font: italic 1.5rem 'Instrument Serif', serif; box-shadow: 9px 5px 0 #718673; }
+.card-category { margin: 1rem 0 .4rem; color: var(--green); font-size: .52rem; }
+.place-card h3 { margin: 0; font-size: 1.5rem; letter-spacing: -.04em; }
+.place-card > p:not(.card-category) { flex: 1; color: var(--muted); font-size: .73rem; line-height: 1.65; }
+.place-card > a { display: flex; justify-content: space-between; padding-top: .6rem; border-top: 1px solid var(--line); color: var(--green); font: .58rem 'DM Mono', monospace; }
+.about { display: flex; align-items: baseline; justify-content: space-between; gap: 2rem; padding: 1.3rem 0; border-top: 1px solid var(--line); }
+.about > span { color: var(--green); }
+.about > p { max-width: 420px; color: var(--muted); font-size: .78rem; }
+footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.2rem max(1.5rem, calc((100% - 1120px) / 2)); border-top: 1px solid var(--line); color: var(--muted); }
+footer .logo { color: var(--ink); font: 600 1rem 'Instrument Serif', serif; text-transform: none; }
+@media (max-width: 700px) { .site-header { padding: 1rem 1.2rem; } .nav-links { gap: .8rem; } .nav-links > a:nth-child(2) { display: none; } main { padding: 0 1.2rem; } .place-card { flex-basis: calc(50% - .5rem); min-width: 0; } .about { align-items: flex-start; flex-direction: column; gap: .3rem; } footer { padding: 1rem 1.2rem; } }
+@media (max-width: 460px) { .nav-links > a:first-child { display: none; } .hero { padding: 3rem 0 2.5rem; } .section-head { align-items: flex-start; flex-direction: column; gap: .75rem; } .place-card { flex-basis: 100%; } .card-image { min-height: 240px; } footer span { display: none; } }

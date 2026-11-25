@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A responsive portfolio page demonstrating a Flexbox navbar and wrapping card grid.">
+    <title>Made Here · Places &amp; People</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header"><a class="logo" href="#top">made<span>here</span></a><nav class="nav-links" aria-label="Main navigation"><a href="#places">Places</a><a href="#people">People</a><a href="#about">About</a><a class="nav-cta" href="#about">See the map <span aria-hidden="true">↗</span></a></nav></header>
+    <main id="top">
+      <section class="hero"><p class="eyebrow">A guide to good things, nearby</p><h1>Find your<br><em>kind of place.</em></h1><p>Independent shops, thoughtful makers, and little corners worth taking the long way for.</p></section>
+      <section id="places" class="places"><div class="section-head"><div><p class="eyebrow">A few of our favorites</p><h2>Made with care.</h2></div><a href="#people">All places <span aria-hidden="true">→</span></a></div>
+        <div class="card-grid">
+          <article class="place-card"><div class="card-image image--coffee"><span class="image-stamp">OPEN<br>EARLY</span><span class="image-shape"></span></div><p class="card-category">COFFEE · EAST SIDE</p><h3>Daybreak Coffee</h3><p>A very good cup and a window seat that catches the morning.</p><a href="#about">Portland, OR <span aria-hidden="true">↗</span></a></article>
+          <article class="place-card"><div class="card-image image--flowers"><span class="image-stamp">GROWN<br>NEARBY</span><span class="flower-shape">✿</span></div><p class="card-category">FLOWERS · OLD TOWN</p><h3>Little Field Florals</h3><p>Seasonal bunches, wrapped in paper and tied with twine.</p><a href="#about">Portland, OR <span aria-hidden="true">↗</span></a></article>
+          <article class="place-card" id="people"><div class="card-image image--ceramics"><span class="image-stamp">MADE BY<br>HAND</span><span class="vase-shape"></span></div><p class="card-category">CERAMICS · NORTH END</p><h3>Soft Corner Studio</h3><p>Useful little objects with a lovely bit of wobble to them.</p><a href="#about">Portland, OR <span aria-hidden="true">↗</span></a></article>
+          <article class="place-card"><div class="card-image image--books"><span class="image-stamp">STAY<br>AWHILE</span><span class="book-shape">A good<br>story.</span></div><p class="card-category">BOOKS · WEST SIDE</p><h3>Second Chapter</h3><p>A tiny bookstore for long browsing and unexpected finds.</p><a href="#about">Portland, OR <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </section>
+      <section id="about" class="about"><span>MADE HERE, SHARED WITH YOU.</span><p>A growing guide to the independent places that make a neighborhood feel like home.</p></section>
+    </main>
+    <footer><a class="logo" href="#top">made<span>here</span></a><span>FIND THE GOOD NEARBY.</span><a href="#top">Back to top ↑</a></footer>
+  </body>
+</html>

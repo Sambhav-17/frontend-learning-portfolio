@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A side-by-side CSS comparison of Flexbox and Grid for the same shared layout.">
+    <title>Layout Notes · Flexbox or Grid?</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header><a class="logo" href="#top">layout<span>notes</span></a><span>FIELD GUIDE NO. 02</span><a href="#comparison">THE COMPARISON ↓</a></header>
+    <main id="top">
+      <section class="intro"><p class="eyebrow">One component, two good tools</p><h1>Flexbox or<br><em>Grid?</em></h1><p>Both can arrange a row of cards. The best choice depends on what the layout needs to control: one dimension, or two?</p></section>
+      <section id="comparison" class="comparison" aria-label="Compare Flexbox and Grid">
+        <article class="demo demo--flex"><div class="demo-heading"><span>01</span><div><h2>Flexbox</h2><p>One dimension · content-led</p></div></div><div class="sample sample-flex"><div class="sample-card sample-card--feature"><span>01</span><strong>One row at a time</strong><small>Cards size to their content</small></div><div class="sample-card"><span>02</span><strong>Flexible items</strong><small>Share leftover space</small></div><div class="sample-card"><span>03</span><strong>Natural wrapping</strong><small>Wrap when needed</small></div></div><p class="explanation">Choose Flexbox when the items flow in one direction and their content should influence their size. It is a natural fit for navigation, action rows, and wrapping card lists.</p><code>display: flex;<br>flex-wrap: wrap;<br>gap: 1rem;</code></article>
+        <article class="demo demo--grid"><div class="demo-heading"><span>02</span><div><h2>Grid</h2><p>Two dimensions · layout-led</p></div></div><div class="sample sample-grid"><div class="sample-card sample-card--feature"><span>01</span><strong>Control both axes</strong><small>Rows and columns together</small></div><div class="sample-card"><span>02</span><strong>Shared tracks</strong><small>Align across the layout</small></div><div class="sample-card"><span>03</span><strong>Place with intent</strong><small>Span columns or rows</small></div></div><p class="explanation">Choose Grid when rows and columns need to line up or items occupy planned areas. It is a natural fit for dashboards, editorial pages, and galleries.</p><code>display: grid;<br>grid-template-columns: repeat(3, 1fr);<br>gap: 1rem;</code></article>
+      </section>
+      <aside class="rule"><span aria-hidden="true">✳</span><p><strong>A useful rule of thumb:</strong> Flexbox for a row or column of things; Grid for a layout that needs rows and columns to work together. Either can solve many real layouts — choose the one that makes the relationships clearest.</p></aside>
+    </main>
+    <footer><a class="logo" href="#top">layout<span>notes</span></a><span>TRY BOTH. KEEP THE ONE THAT FITS.</span><span>© 2026</span></footer>
+  </body>
+</html>
